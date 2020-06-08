@@ -53,12 +53,36 @@ section {
 /* orange section */
 section.orange {
     background-color: $bg-orange-section;
-    @include my-flex(column, space-between, center);
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        width: 60%;
+        margin: auto;
+    }
     .section-center {
-        @include my-flex(row, space-between, baseline);
-        width: 30%;
+        @include my-flex(row, space-around, baseline);
+        padding: 20px 50px;
+        text-align: center;
+        margin-bottom: 70px;
+
         img {
             width: $section-image-width;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 20px;
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    .section-bottom {
+        text-align: center;
+
+        img {
+            width: $section-image-width + 180px;
         }
     }
 }
