@@ -1,0 +1,64 @@
+/* start first section */
+section {
+    padding: $padding-section;
+    @include my-flex(row, space-between, stretch);
+
+    .first-section-left {
+        width: 45%;
+
+        font-weight: 400;
+
+        h1 {
+            margin-top: 0;
+            font-size: $title-font-size;
+            line-height: 4.5rem;
+        }
+        p {
+            margin-top: 0;
+            font-size: $p-font-size;
+            line-height: 2.5rem;
+        }
+        .sign-up {
+            @include my-flex(row, space-between, center);
+            padding-right: 80px;
+            margin-bottom: 20px;
+
+            .btn-sign-up {
+                @include btn-base($btn-lg-padding);
+                background-color: $btn-bg;
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: darken($btn-bg, 12%);
+                }
+            }
+        }
+
+        .mail {
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    .first-section-right {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/*end first section*/
+
+/* orange section */
+section.orange {
+    background-color: $bg-orange-section;
+    @include my-flex(column, space-between, center);
+    .section-center {
+        @include my-flex(row, space-between, baseline);
+        width: 30%;
+        img {
+            width: $section-image-width;
+        }
+    }
+}
