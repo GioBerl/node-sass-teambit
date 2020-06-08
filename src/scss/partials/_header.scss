@@ -27,16 +27,14 @@ header {
         }
 
         &:last-child {
-            border: 1px solid blue;
-            border-radius: 5px;
-            padding: $button-padding;
+            @include btn-base($btn-padding);
 
             &:hover {
                 a {
                     color: white;
                 }
 
-                background-color: blue;
+                background-color: $btn-bg;
             }
         }
     }

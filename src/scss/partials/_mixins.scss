@@ -4,3 +4,9 @@
     justify-content: $just;
     align-items: $align;
 }
+
+@mixin btn-base($pad) {
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: $pad;
+}
