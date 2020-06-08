@@ -1,0 +1,43 @@
+header {
+    @include my-flex(row, space-between, center);
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+
+    .logo {
+        cursor: pointer;
+    }
+
+    ul.right-header {
+        width: 40%;
+        list-style: none;
+        @include my-flex(row, space-between, center);
+    }
+
+    li {
+        a {
+            font-weight: 600;
+            text-decoration: none;
+            color: #58402c;
+        }
+
+        &:first-child {
+            i {
+                margin-left: 15px;
+            }
+        }
+
+        &:last-child {
+            border: 1px solid blue;
+            border-radius: 5px;
+            padding: $button-padding;
+
+            &:hover {
+                a {
+                    color: white;
+                }
+
+                background-color: blue;
+            }
+        }
+    }
+}
