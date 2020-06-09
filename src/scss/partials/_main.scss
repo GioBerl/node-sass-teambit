@@ -183,3 +183,49 @@ section.orange-bottom {
 .praise {
     @extend .survey;
 }
+
+/*start get-started section*/
+
+.get-started {
+    background-color: $bg-orange-section;
+    display: block;
+    text-align: center;
+    h3 {
+        font-size: $h3-font-size;
+        line-height: $h3-line-heigth;
+    }
+
+    .notation {
+        @extend %my-notation;
+        p {
+            font-size: $p-font-size - 7px;
+            line-height: $p-line-heigth - 0.3rem;
+            text-align: left;
+
+            br {
+                margin-bottom: 50px;
+            }
+        }
+
+        .notation-bottom {
+            @include my-flex(row, flex-start, center);
+
+            .photos {
+                img:nth-child(2) {
+                    margin-left: 12px;
+                }
+            }
+
+            .description {
+                margin-left: 20px;
+                @include my-flex(column, space-between, flex-start);
+
+                .authors {
+                    color: #30488f;
+                    margin-bottom: 5px;
+                    font-size: larger;
+                }
+            }
+        }
+    }
+}

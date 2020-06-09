@@ -9,3 +9,13 @@ body {
     margin: 0 auto;
     @include my-flex(row, space-between, center);
 }
+
+%my-notation {
+    text-align: center;
+    max-width: 630px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
