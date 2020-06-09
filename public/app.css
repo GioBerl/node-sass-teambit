@@ -448,7 +448,7 @@ header li:last-child:hover a {
 /* start first section */
 
 section {
-  padding: 100px 0;
+  padding: 80px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -582,4 +582,89 @@ section.orange-bottom .section-wrapper h2 {
 section.orange-bottom .section-wrapper .third img {
   width: 60px;
 }
+
+/*start feedback section */
+
+.feedback .img-container,
+.reviews .img-container,
+.survey .img-container,
+.praise .img-container {
+  width: 50%;
+  float: left;
+  padding: 30px;
+}
+
+.feedback .img-container img,
+.reviews .img-container img,
+.survey .img-container img,
+.praise .img-container img {
+  max-width: 768px;
+  float: right;
+}
+
+.feedback .explanation,
+.reviews .explanation,
+.survey .explanation,
+.praise .explanation {
+  width: 50%;
+  float: left;
+}
+
+.feedback .explanation .wrapper-communication,
+.reviews .explanation .wrapper-communication,
+.survey .explanation .wrapper-communication,
+.praise .explanation .wrapper-communication {
+  max-width: 420px;
+  margin-bottom: 35px;
+}
+
+.feedback .explanation .wrapper-communication h3,
+.reviews .explanation .wrapper-communication h3,
+.survey .explanation .wrapper-communication h3,
+.praise .explanation .wrapper-communication h3 {
+  font-size: 26px;
+  line-height: 2.5rem;
+}
+
+.feedback .explanation .wrapper-communication p,
+.reviews .explanation .wrapper-communication p,
+.survey .explanation .wrapper-communication p,
+.praise .explanation .wrapper-communication p {
+  font-size: 22px;
+  line-height: 2rem;
+}
+
+.feedback .explanation .wrapper-communication a,
+.reviews .explanation .wrapper-communication a,
+.survey .explanation .wrapper-communication a,
+.praise .explanation .wrapper-communication a {
+  color: #30488f;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.feedback .explanation .wrapper-communication img,
+.reviews .explanation .wrapper-communication img,
+.survey .explanation .wrapper-communication img,
+.praise .explanation .wrapper-communication img {
+  margin-top: 40px;
+  max-width: 270px;
+  margin-left: 80px;
+}
+
+/*start survey section */
+
+.survey .img-container img,
+.praise .img-container img {
+  float: left;
+}
+
+.survey .wrapper-communication,
+.praise .wrapper-communication {
+  float: right;
+}
+
+/* start reviews section */
+
+/*start praise section*/
 

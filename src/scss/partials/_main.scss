@@ -110,3 +110,76 @@ section.orange-bottom {
         }
     }
 }
+
+/*start feedback section */
+.feedback {
+    .img-container {
+        width: 50%;
+        float: left;
+        padding: 30px;
+
+        img {
+            max-width: 768px;
+            float: right;
+        }
+    }
+
+    .explanation {
+        width: 50%;
+        float: left;
+
+        .wrapper-communication {
+            max-width: 420px;
+            margin-bottom: 35px;
+
+            h3 {
+                font-size: $h3-font-size;
+                line-height: $h3-line-heigth;
+            }
+
+            p {
+                font-size: $p-font-size;
+                line-height: $p-line-heigth;
+            }
+
+            a {
+                color: #30488f;
+                text-decoration: none;
+                font-size: $a-font-size;
+            }
+
+            img {
+                margin-top: 40px;
+                max-width: 270px;
+                margin-left: 80px;
+            }
+        }
+    }
+}
+
+/*start survey section */
+
+.survey {
+    @extend .feedback;
+    .img-container {
+        img {
+            float: left;
+        }
+    }
+
+    .wrapper-communication {
+        float: right;
+    }
+}
+
+/* start reviews section */
+
+.reviews {
+    @extend .feedback;
+}
+
+/*start praise section*/
+
+.praise {
+    @extend .survey;
+}
