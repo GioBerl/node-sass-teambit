@@ -406,6 +406,31 @@ body {
   position: relative;
 }
 
+.get-started .notation .quote {
+  display: block;
+  width: 37px;
+  height: 39px;
+  position: absolute;
+  top: -23px;
+  left: -1px;
+  z-index: 1;
+}
+
+.get-started .sign-up .btn-sign-up,
+section .first-section-left .sign-up .btn-sign-up {
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 8px 30px;
+  background-color: #30488f;
+  color: white;
+  text-decoration: none;
+}
+
+.get-started .sign-up .btn-sign-up:hover,
+section .first-section-left .sign-up .btn-sign-up:hover {
+  background-color: #213161;
+}
+
 header {
   width: 100%;
   z-index: 10;
@@ -489,19 +514,6 @@ section .first-section-left .sign-up {
   align-items: center;
   padding-right: 80px;
   margin-bottom: 20px;
-}
-
-section .first-section-left .sign-up .btn-sign-up {
-  border: 1px solid blue;
-  border-radius: 5px;
-  padding: 8px 30px;
-  background-color: #30488f;
-  color: white;
-  text-decoration: none;
-}
-
-section .first-section-left .sign-up .btn-sign-up:hover {
-  background-color: #213161;
 }
 
 section .first-section-left .mail {
@@ -724,5 +736,89 @@ section.orange-bottom .section-wrapper .third img {
   color: #30488f;
   margin-bottom: 5px;
   font-size: larger;
+}
+
+.get-started .sign-up {
+  margin: 50px;
+}
+
+.get-started .sign-up a {
+  margin: 0 20px;
+}
+
+.get-started .mail {
+  text-decoration: none;
+}
+
+footer {
+  padding: 80px 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .footer-left {
+  width: 35%;
+}
+
+footer .footer-left-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .footer-left-wrapper img {
+  width: 100px;
+  padding-right: 20px;
+}
+
+footer .footer-left-wrapper p {
+  font-size: 19px;
+  margin: 0;
+}
+
+footer .footer-left-wrapper p span {
+  color: blue;
+}
+
+footer .footer-left-wrapper p span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 75%;
+}
+
+footer .footer-right ul {
+  list-style: none;
+  margin-top: 0;
+}
+
+footer .footer-right ul h4 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+footer .footer-right ul li {
+  margin-bottom: 20px;
+}
+
+footer .footer-right ul li a {
+  text-decoration: none;
+  color: #58402c;
+}
+
+footer .footer-right ul li a:hover {
+  color: #30488f;
 }
 

@@ -22,17 +22,7 @@ section {
             @include my-flex(row, space-between, center);
             padding-right: 80px;
             margin-bottom: 20px;
-
-            .btn-sign-up {
-                @include btn-base($btn-lg-padding);
-                background-color: $btn-bg;
-                color: white;
-                text-decoration: none;
-
-                &:hover {
-                    background-color: darken($btn-bg, 12%);
-                }
-            }
+            @extend %my-signUp;
         }
 
         .mail {
@@ -197,6 +187,11 @@ section.orange-bottom {
 
     .notation {
         @extend %my-notation;
+
+        .quote {
+            @extend %my-quote;
+        }
+
         p {
             font-size: $p-font-size - 7px;
             line-height: $p-line-heigth - 0.3rem;
@@ -227,5 +222,18 @@ section.orange-bottom {
                 }
             }
         }
+    }
+
+    .sign-up {
+        @extend %my-signUp;
+        margin: 50px;
+
+        a {
+            margin: 0 20px;
+        }
+    }
+
+    .mail {
+        text-decoration: none;
     }
 }

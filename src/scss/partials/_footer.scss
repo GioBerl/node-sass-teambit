@@ -1,0 +1,60 @@
+footer {
+    padding: 80px 0;
+    .container {
+        @include my-flex(row, space-between, flex-start);
+    }
+    .footer-left {
+        width: 35%;
+        // background-color: red;
+        &-wrapper {
+            @include my-flex(row, space-between, flex-start);
+
+            img {
+                width: 50px * 2;
+                padding-right: 20px;
+            }
+
+            p {
+                font-size: $p-font-size - 3px;
+                margin: 0;
+
+                span {
+                    color: blue;
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-right {
+        @include my-flex(row, space-between, baseline);
+        width: 75%;
+
+        ul {
+            list-style: none;
+            margin-top: 0;
+
+            h4 {
+                font-size: $h4-font-size;
+                margin-top: 0;
+            }
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #58402c;
+
+                    &:hover {
+                        color: #30488f;
+                    }
+                }
+            }
+        }
+    }
+}

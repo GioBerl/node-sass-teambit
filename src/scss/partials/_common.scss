@@ -19,3 +19,26 @@ body {
     border-radius: 10px;
     position: relative;
 }
+
+%my-quote {
+    display: block;
+    width: 37px;
+    height: 39px;
+    position: absolute;
+    top: -23px;
+    left: -1px;
+    z-index: 1;
+}
+
+%my-signUp {
+    .btn-sign-up {
+        @include btn-base($btn-lg-padding);
+        background-color: $btn-bg;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: darken($btn-bg, 12%);
+        }
+    }
+}
