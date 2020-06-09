@@ -390,15 +390,22 @@ body {
 .container {
   width: 60%;
   margin: 0 auto;
-}
-
-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+header {
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 header .logo {
@@ -504,18 +511,27 @@ section .first-section-right img {
 
 /* orange section */
 
-section.orange {
+section.orange,
+section.orange-bottom {
   background-color: #ffe7d2;
 }
 
-section.orange h2 {
+section.orange .section-wrapper,
+section.orange-bottom .section-wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+  padding-bottom: 100px;
+}
+
+section.orange h2,
+section.orange-bottom h2 {
   text-align: center;
   font-size: 30px;
   width: 60%;
   margin: auto;
 }
 
-section.orange .section-center {
+section.orange .section-center,
+section.orange-bottom .section-center {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -525,22 +541,45 @@ section.orange .section-center {
   margin-bottom: 70px;
 }
 
-section.orange .section-center img {
+section.orange .section-center img,
+section.orange-bottom .section-center img {
   width: 150px;
   margin: 20px 0;
 }
 
-section.orange .section-center p {
+section.orange .section-center p,
+section.orange-bottom .section-center p {
   font-size: 20px;
   width: 80%;
   margin: auto;
 }
 
-section.orange .section-bottom {
+section.orange .section-bottom,
+section.orange-bottom .section-bottom {
   text-align: center;
 }
 
-section.orange .section-bottom img {
+section.orange .section-bottom img,
+section.orange-bottom .section-bottom img {
   width: 330px;
+}
+
+/*orange-bottom*/
+
+section.orange-bottom {
+  padding-top: 0;
+}
+
+section.orange-bottom .section-wrapper {
+  border-bottom: 0;
+}
+
+section.orange-bottom .section-wrapper h2 {
+  padding-top: 50px;
+  font-size: 28px;
+}
+
+section.orange-bottom .section-wrapper .third img {
+  width: 60px;
 }
 

@@ -53,6 +53,10 @@ section {
 /* orange section */
 section.orange {
     background-color: $bg-orange-section;
+    .section-wrapper {
+        border-bottom: $my-border-bottom;
+        padding-bottom: 100px;
+    }
 
     h2 {
         text-align: center;
@@ -83,6 +87,26 @@ section.orange {
 
         img {
             width: $section-image-width + 180px;
+        }
+    }
+}
+
+/*orange-bottom*/
+section.orange-bottom {
+    @extend .orange;
+    padding-top: 0;
+    .section-wrapper {
+        border-bottom: 0;
+
+        h2 {
+            padding-top: 50px;
+            font-size: 28px;
+        }
+
+        .third {
+            img {
+                width: 60px;
+            }
         }
     }
 }
